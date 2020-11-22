@@ -1,5 +1,5 @@
 {% set name = "textstat" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fa290f43713d41e44ce28227349763147c161052258db704ca84206d5b5b861e
+  sha256: 602650af62355bc7cc0e6c2799a870475534875554acb5822b7b8f3ad55e14bd
 
 build:
   noarch: python

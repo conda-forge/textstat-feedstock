@@ -121,5 +121,6 @@ Feedstock Maintainers
 
 * [@benhuff](https://github.com/benhuff/)
 * [@mwilson8](https://github.com/mwilson8/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
 

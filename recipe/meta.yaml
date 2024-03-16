@@ -1,31 +1,34 @@
 {% set name = "textstat" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d04aa648ffbfb54ee5ab4b3d434575c83a69b45704e6a3cbc03344d17552e819
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textstat-{{ version }}.tar.gz
+  sha256: 60b63cf8949f45bbb3b4205e4411bbc1cd66df4c08aef12545811c7e6e24f011
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
+    - python >=3.8
     - pip
-    - python >=3.6
   run:
+    - python >=3.8
     - pyphen
-    - python >=3.6
-    - setuptools
 
 test:
   imports:
     - textstat
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/shivam5992/textstat
@@ -42,3 +45,4 @@ extra:
     - mwilson8
     - oblute
     - benhuff
+    - rxm7706

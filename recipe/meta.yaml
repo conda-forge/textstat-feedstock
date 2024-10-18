@@ -1,13 +1,13 @@
 {% set name = "textstat" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textstat-{{ version }}.tar.gz
-  sha256: 60b63cf8949f45bbb3b4205e4411bbc1cd66df4c08aef12545811c7e6e24f011
+  url: https://github.com/textstat/textstat/archive/{{ version }}.tar.gz
+  sha256: 88708e35d228ac7bd8a7e6119882690b926e4757b065ef165153ba0331519e04
 
 build:
   noarch: python
@@ -18,9 +18,11 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     - python >=3.8
     - pyphen
+    - setuptools
 
 test:
   imports:

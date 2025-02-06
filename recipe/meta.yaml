@@ -1,5 +1,5 @@
 {% set name = "textstat" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/textstat/textstat/archive/{{ version }}.tar.gz
-  sha256: 88708e35d228ac7bd8a7e6119882690b926e4757b065ef165153ba0331519e04
+  sha256: cd484713f5710fa3efe7acecee5e12369c84a0982133c596b1f37443968df0db
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - cmudict
     - python >={{ python_min }}
     - pyphen
     - setuptools

@@ -3,13 +3,13 @@ About textstat-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/textstat-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/shivam5992/textstat
+Home: https://github.com/textstat/textstat
 
 Package license: MIT
 
 Summary: Calculate statistical features from text
 
-Development: https://github.com/shivam5992/textstat
+Development: https://github.com/textstat/textstat
 
 Documentation: https://pypi.org/project/textstat/
 

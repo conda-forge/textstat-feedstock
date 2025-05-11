@@ -3,7 +3,7 @@ About textstat-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/textstat-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/textstat/textstat
+Home: https://textstat.org/
 
 Package license: MIT
 
@@ -11,7 +11,11 @@ Summary: Calculate statistical features from text
 
 Development: https://github.com/textstat/textstat
 
-Documentation: https://pypi.org/project/textstat/
+Documentation: https://docs.textstat.org/
+
+Textstat is a Python library to calculate statistics from text.
+It provides utilities for calculating text metrics and comes with built-in functions 
+to help determine readability, complexity, and grade level.
 
 Current build status
 ====================

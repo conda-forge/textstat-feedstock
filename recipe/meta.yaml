@@ -1,5 +1,5 @@
 {% set name = "textstat" %}
-{% set version = "0.7.5" %}
+{% set version = "0.7.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/textstat/textstat/archive/{{ version }}.tar.gz
-  sha256: cd484713f5710fa3efe7acecee5e12369c84a0982133c596b1f37443968df0db
+  sha256: d3fb8d008f6a94543427d89d95020ec2c6c2c90d16378a3fc85d124906c4d68b
 
 build:
   noarch: python
